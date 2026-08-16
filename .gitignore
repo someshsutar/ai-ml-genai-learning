@@ -1,0 +1,75 @@
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+venv*/
+env/
+ENV/
+
+# Environment files / secrets
+.env
+*.env
+credentials.json
+*.pem
+*.key
+
+# Testing and coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+coverage.xml
+pytestdebug.log
+
+# Mypy
+.mypy_cache/
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project-specific generated data and models
+examples/*/data/
+examples/*/models/
+examples/**/data/
+examples/**/models/
+data/
+models/
+*.h5
+*.pth
+*.ckpt
+
+# Ignore pip cache / wheel files
+pip-wheel-metadata/
+*.whl
+
+# Optional: ignore local Python interpreter file
+.Python
+
