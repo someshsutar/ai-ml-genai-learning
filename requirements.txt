@@ -1,4 +1,6 @@
-numpy>=2.0
-pandas>=2.2
-scikit-learn>=1.5
-joblib>=1.4
+numpy
+pandas
+scikit-learn
+joblib
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
