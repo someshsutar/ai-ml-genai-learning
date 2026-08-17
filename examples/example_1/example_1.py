@@ -149,28 +149,39 @@ print(f"Learned Bias   : {bias:.2f}")
 # 7. MAKE A PREDICTION
 # ------------------------------------------------------------
 
-experience = 12
+while True:
+    user_input = input("\nEnter year of experiance or press 'q' to exit: ").strip()
 
-predicted_salary = predict(
-    experience,
-    weight,
-    bias
-)
+    if user_input == "q":
+        break
 
-print("\nPrediction")
-print("-" * 60)
+    if not user_input.isdigit():
+        print("Input value should be a positive intiger!")
+        continue
 
-print(f"Experience : {experience} years")
-print(f"Predicted Salary : ₹{predicted_salary:,.2f}")
+    experience = int(user_input)
+
+    predicted_salary = predict(
+        experience,
+        weight,
+        bias
+    )
+
+    print("\nPrediction")
+    print("-" * 60)
+
+    print(f"Experience : {experience} years")
+    print(f"Predicted Salary : ₹{predicted_salary:,.2f}")
 
 
-# ------------------------------------------------------------
-# 8. DISPLAY THE MODEL EQUATION
-# ------------------------------------------------------------
+    # ------------------------------------------------------------
+    # 8. DISPLAY THE MODEL EQUATION
+    # ------------------------------------------------------------
 
-print("\nLearned Model")
-print("-" * 60)
+    print("\nLearned Model")
+    print("-" * 60)
 
-print(
-    f"Salary = {weight:.2f} × Experience + {bias:.2f}"
-)
+    print(
+        f"Salary = {weight:.2f} × Experience + {bias:.2f}"
+    )
+    print("-" * 60)
